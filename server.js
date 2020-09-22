@@ -1,6 +1,6 @@
 const Koa = require('koa')
 const Router = require('koa-router')
-const registerRouter  = require('./server/routes')
+const registerRouter  = require('./server')
  
 const app = new Koa()
 app.use(registerRouter.routes(), registerRouter.allowedMethods())
